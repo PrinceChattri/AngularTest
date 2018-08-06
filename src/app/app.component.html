@@ -1,20 +1,51 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<style>
+  section:hover{
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+	   -moz-box-shadow: 0 10px 6px -6px #777;
+	        box-shadow: 0 10px 6px -6px #777;
+  }
+</style>
 
+<main style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center">
+  <div style="width: 40%;padding: 10px">
+    <label>Search for Customer: </label>
+    <input type="text" [(ngModel)]="term">
+    <h1>Customers ♚</h1>
+    <section *ngFor="let Result of data.Results |filter:term | paginate: { itemsPerPage: 5, currentPage: p }; let i = index"
+      style="background: honeydew">
+      <div style="padding: 10px">
+        <h1>Name: {{Result.ContactName}}</h1>
+        <div>ID: {{Result.Id}}</div>
+        <div>CompanyName: {{Result.CompanyName}}</div>
+        <div>Address: {{Result.Address}}</div>
+        <div>City: {{Result.City}}</div>
+        <div>Phone: {{Result.Phone}}</div>
+        <div>Fax: {{Result.Fax}}</div>
+        <div>PostalCode: {{Result.PostalCode}}</div>
+      </div>
+      <hr>
+    </section>
+
+  </div>
+
+  <div style="width: 40%; padding: 10px">
+    <label>Search for Orders: </label>
+    <input type="text" [(ngModel)]="Order">
+    <h1>Orders ✎</h1>
+    <section *ngFor="let Result of order.Results |filter:Order  | paginate: { itemsPerPage: 5, currentPage: p }; let i = index"
+      style=" background: pink">
+      <div style="padding: 10px">
+        <h1>Customer ID: {{Result.CustomerId}}</h1>
+        <div>EmployeeId: {{Result.EmployeeId}}</div>
+        <div>Freight: {{Result.Freight}}</div>
+        <div>ID: {{Result.Id}}</div>
+        <div>OrderDate: {{Result.OrderDate}}</div>
+        <div>RequiredDate: {{Result.RequiredDate}}</div>
+        <div>ShipAddress: {{Result.ShipAddress}}</div>
+        <div>ShipName: {{Result.ShipName}}</div>
+      </div>
+      <hr>
+    </section>
+  </div>
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</main>
