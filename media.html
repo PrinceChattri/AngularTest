@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            font-size: 12px;
+            margin-right: 8%;
+
+        }
+
+        .logo {
+            width: 20%;
+            text-align: right;
+        }
+
+        .product-section {
+            padding: 20px;
+            margin-left: 50px;
+        }
+
+        .form-group {
+            padding: 0 !important;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        main {
+            display: flex;
+            width: 70%;
+            flex-wrap: wrap
+        }
+
+        .nav div {
+            padding: 15px
+        }
+
+        .sub-menu {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            background: black;
+            align-content: space-around;
+            margin-top: 15px;
+            background-attachment: fixed;
+            background-image: url("assets/back.jpg");
+
+        }
+
+        .cashback {
+            color: white;
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        main {
+            border-right: 2px dotted grey;
+        }
+
+        .prod {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px
+        }
+
+        .product-display {
+            display: flex
+        }
+
+        .prod--name {
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .heading {
+            font-weight: 800;
+        }
+
+        .search {
+            padding: 0 !important;
+        }
+
+        .explore {
+            color: white;
+        }
+
+        .logo img {
+            width: 150px
+        }
+
+        .Image {
+            width: 40px;
+            height: 40px
+        }
+
+        .navbar-form .form-control {
+            display: inline-block;
+            width: 300px !important;
+            vertical-align: middle;
+        }
+
+        .img-text {
+            text-align: center;
+            font-size: 12px
+        }
+
+        .btn-default {
+            color: #333;
+            background-color: #FF3E56 !important;
+            border-color: #FF3E56 !important;
+            color: white;
+        }
+
+        body {
+            font-family: bookman old style;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #333;
+            background-color: #fff;
+        }
+
+        .searchbar {
+            display: flex;
+            margin: 50px 0;
+            font-size: 12px;
+        }
+
+        select {
+
+            height: 40px;
+            padding: 0;
+            margin: 0;
+            border: none;
+            width: 100px;
+            background: #F3F3F3;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .inputsearch {
+            height: 40px;
+            padding: 0;
+            margin: 0;
+            border: none;
+            width: 400px
+        }
+
+        .button {
+            background: #FF3E56;
+            border: none;
+            height: 40px;
+            color: white;
+            border-radius: 0 5px 5px 0;
+        }
+
+        @media (max-width: 1024px) {
+            .navbar-form .form-control {
+                width: 100px !important;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .inputsearch {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo"> <img src="assets/logo.png"></div>
+        <div class="nav">
+            <div>Deals</div>
+            <div>Coupons</div>
+            <div>Tips</div>
+            <div>Contact</div>
+            <div class="search">
+                <form class="navbar-form navbar-left" action="/action_page.php">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search for discounts and coupons">
+                    </div>
+                    <button type="submit" class="btn btn-default">Search</button>
+                </form>
+            </div>
+            <div>logo</div>
+            <div>Menu</div>
+        </div>
+    </header>
+    <div class="sub-menu">
+        <div>
+            <div><img src="assets/tee.png" class="Image"></div>
+            <div class="img-text">Apparel</div>
+        </div>
+        <div>
+            <div><img src="assets/tee.png" class="Image"></div>
+            <div class="img-text">Apparel</div>
+        </div>
+        <div>
+            <div><img src="assets/tee.png" class="Image"></div>
+            <div class="img-text">Apparel</div>
+        </div>
+        <div>
+            <div><img src="assets/tee.png" class="Image"></div>
+            <div class="img-text">Apparel</div>
+        </div>
+        <div>
+            <div><img src="assets/tee.png" class="Image"></div>
+            <div class="img-text">Apparel</div>
+        </div>
+        <div>
+            <div><img src="assets/tee.png" class="Image"></div>
+            <div class="img-text">Apparel</div>
+        </div>
+        <div>
+            <div><img src="assets/tee.png" class="Image"></div>
+            <div class="img-text">Apparel</div>
+        </div>
+        <div>
+            <div><img src="assets/tee.png" class="Image"></div>
+            <div class="img-text">Apparel</div>
+        </div>
+
+
+    </div>
+
+    <section>
+        <div class="cashback">Cashback offers + discount offers</div>
+        <div class="searchbar">
+            <select>
+                <option value="All">All</option>
+
+            </select>
+            <input type="search" class="inputsearch" placeholder="Search offers and discount coupons">
+            <button class="button">Find coupons</button>
+        </div>
+        <div class="explore">Explore more to start gaining offers and discounts</div>
+    </section>
+    <div class="product-section">
+        <div class="heading">Popular coupon categories...</div>
+        <div class="product-display">
+            <main>
+                <div class="prod col-md-2">
+                    <div><img src="assets/milk.png"></div>
+                    <div class="prod--name">Milk</div>
+                </div>
+                <div class="prod col-md-2">
+                    <div><img src="assets/milk.png"></div>
+                    <div class="prod--name">Milk</div>
+                </div>
+                <div class="prod col-md-2">
+                    <div><img src="assets/milk.png"></div>
+                    <div class="prod--name">Milk</div>
+                </div>
+                <div class="prod col-md-2">
+                    <div><img src="assets/milk.png"></div>
+                    <div class="prod--name">Milk</div>
+                </div>
+                <div class="prod col-md-2">
+                    <div><img src="assets/milk.png"></div>
+                    <div class="prod--name">name</div>
+                </div>
+                <div class="prod col-md-2">
+                    <div><img src="assets/milk.png"></div>
+                    <div class="prod--name">name</div>
+                </div>
+                <div class="prod col-md-2">
+                    <div><img src="assets/milk.png"></div>
+                    <div class="prod--name">name</div>
+                </div>
+                <div class="prod col-md-2">
+                    <div><img src="assets/milk.png"></div>
+                    <div class="prod--name">name</div>
+                </div>
+            </main>
+            <div>
+                Advertisement area
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

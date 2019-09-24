@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="5px" viewBox="0 0 10 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>ico-dropdown</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1" transform="translate(-669.000000, -498.000000)" fill="#5B5B5B">
+            <g id="Group-25" transform="translate(560.000000, 356.000000)">
+                <g id="Group-20" transform="translate(0.000000, 114.000000)">
+                    <g id="Group-14" transform="translate(6.000000, 6.000000)">
+                        <g id="ico-dropdown" transform="translate(103.000000, 22.000000)">
+                            <polygon id="Shape" points="0 0 5 5 10 0"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
